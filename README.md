@@ -1,5 +1,8 @@
 # Image-to-text translate using Tesseract & OpenAI API
-This project is using **Open AI _API_** to translate text
+This project is using : 
+-**Open AI _API_** to translate text
+-**Tesseract-OCR** to collect text from image
+-**Opencv** to enchanting image processing
 
 # HOW TO INSTALL
 
