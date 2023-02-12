@@ -23,6 +23,30 @@ pip install openai
 1. Save your image at the root folder of this project.
 2. At _translate.py_ change the string inside gambar var to your saved image.
 > gambar = 'YOUR_IMAGE_NAME.YOUR_IMAGE_EXTENSION'
+3. If you wanna change the translated language, go to line 70 and change the following code:
+```
+response = openai.Completion.create(
+    engine=model_engine,
+    prompt="translate '" + text + "' to Bahasa",
+    max_tokens=1024,
+    n=1,
+    stop=None,
+    temperature=0.5,
+)
+
+```
+to
+
+```
+response = openai.Completion.create(
+    engine=model_engine,
+    prompt="translate '" + text + "' to YOUR_LANGUAGE_CHOICE",
+    max_tokens=1024,
+    n=1,
+    stop=None,
+    temperature=0.5,
+)
+```
 
 # IMPORTANT
 
