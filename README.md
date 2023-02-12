@@ -1,14 +1,23 @@
 # Image-to-text translate using Tesseract & OpenAI API
 This project is using : 
--**Open AI _API_** to translate text
--**Tesseract-OCR** to collect text from image
--**Opencv** to enchanting image processing
+- **Open AI _API_** to translate text
+- **Tesseract-OCR** to collect text from image
+- **Opencv** to enchanting image processing
 
 # HOW TO INSTALL
 
-1. Create constant.py
-2. Inside constant.py write
+1. After cloning this project go to this project directory
+2. Create constant.py
+3. Inside constant.py write
 > api_key = 'YOUR-OPENAI-API-KEY'
+4. [install tesseract-ocr](https://tesseract-ocr.github.io/tessdoc/Installation.html)
+5. open terminal ( cmd in windows )
+ 
+```
+pip install pytesseract
+pip install opencv-python
+pip install openai
+```
 
 # HOW TO USE
 1. Save your image at the root folder of this project.
