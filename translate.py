@@ -9,7 +9,7 @@ import constant
 
 from PIL import Image, ImageTk
 
-gambar = 'text-chinese.jpg'
+gambar = 'text-germany.png'
 
 folder_name = 'temp'
 
@@ -116,7 +116,7 @@ image_segmen = tk.Label(root, image=img_2)
 image_segmen.grid(row=0, column=1)
 
 # Tampilkan text yang terdeteksi
-label_text_detected = tk.Label(root, text="Text yang terdeteksi : \n" + text)
+label_text_detected = tk.Label(root, text="Detected Text : \n" + text)
 
 label_text_detected.grid(row=1, column=0)
 
@@ -131,7 +131,7 @@ characters_per_line = window_width // font_size
 text_lines = [translation[i:i+characters_per_line] for i in range(0, len(translation), characters_per_line)]
 
 # Menampilkan teks dengan tkinter
-label_text_translate = tk.Label(root, text="Teks terjemahan : \n" + "\n".join(text_lines), font=("Helvetica", font_size))
+label_text_translate = tk.Label(root, text="Translated Text : \n" + "\n".join(text_lines), font=("Helvetica", font_size))
 label_text_translate.grid(row=1, column=1)
 
 # Run GUI
