@@ -1,4 +1,5 @@
 # Image-to-text translate using Tesseract & OpenAI API
+This project is using **Open AI _API_** to translate text
 
 # HOW TO INSTALL
 
