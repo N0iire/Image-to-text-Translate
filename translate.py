@@ -1,3 +1,4 @@
+import errno
 import cv2
 import openai
 import pytesseract
@@ -5,6 +6,8 @@ import numpy as np
 import tkinter as tk
 import os
 import shutil
+import re
+
 import constant
 
 from PIL import Image, ImageTk
@@ -62,12 +65,14 @@ for contour in contours:
 cv2.imwrite('temp\contour.jpg', img)
 
 # Konfigurasi tesseract
-config = "eng"
+config = "-l eng+jpn+kor+rus+chi_sim+vie+thai"
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Ekstraksi teks dari gambar
-text = pytesseract.image_to_string(thresh)
+text = pytesseract.image_to_string(thresh, config=config)
+
+
 
 model_engine = "text-davinci-003"
 response = openai.Completion.create(
