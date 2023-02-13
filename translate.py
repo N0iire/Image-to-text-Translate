@@ -9,6 +9,9 @@ import constant
 
 from PIL import Image, ImageTk
 
+# This is made by N0iire at https://github.com/N0iire/Image-to-text-Translate
+
+
 gambar = 'text-germany.png'
 
 folder_name = 'temp'
@@ -69,7 +72,7 @@ text = pytesseract.image_to_string(thresh)
 model_engine = "text-davinci-003"
 response = openai.Completion.create(
     engine=model_engine,
-    prompt="translate '" + text + "' to Bahasa",
+    prompt="translate '" + text + "' to Bahasa", #Change to your prefered language
     max_tokens=1024,
     n=1,
     stop=None,
