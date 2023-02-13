@@ -65,10 +65,21 @@ response = openai.Completion.create(
 ```
 
 # IMPORTANT
+**Supported Language**.
+- Eng
+- Germany
+- Italy
+- French
+- Korean
+- Russian
+- Chinese (sim)
+- Vietnamese
+- Thailand
 
-This app only support **_alphabet_** languange.
-<br>Such as _english_, _germany_, _italy_, **etc.**
-<br>Image extension that supported is _jpeg_, _jpg_, _png_
+**Supported Image Extention**
+- _jpeg_ 
+- _jpg_
+- _png_
 
 # Future Update
 
