@@ -75,3 +75,8 @@ This app only support **_alphabet_** languange.
 1. Symbolic languange **and/or** _right-to-left_ recognation & translation.
 2. Enchanting image processing.
 3. Many more...
+
+# License & How to Contribute
+### This project is open for everyone who want to use, feel free to use it.
+<br>
+But if you can, please don't delete my github username in the `translate.py` file. Thanks!
