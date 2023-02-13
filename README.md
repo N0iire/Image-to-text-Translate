@@ -88,6 +88,6 @@ response = openai.Completion.create(
 3. Many more...
 
 # License & How to Contribute
-### This project is open for everyone who want to use, feel free to use it.
+### This project is open for everyone, feel free to use it for any case.
 <br>
 But if you can, please don't delete my github username in the `translate.py` file. Thanks!
